@@ -46,6 +46,27 @@
         }
         .footer { margin-top: 24px; font-size: 13px; color: #999; }
         .status { color: #38a169; font-weight: bold; }
+        .nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #667eea;
+    border: 1px solid #667eea;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.nav a:hover,
+.nav a.active {
+    background: #667eea;
+    color: white;
+}
     </style>
 </head>
 <body>
@@ -54,6 +75,11 @@
 
         <h1> Hello, DevOps!</h1>
         <h2>Lab 1 — Website đã được cập nhật tự động! </h2>
+        <nav class="nav">
+    <a href="index.html" class="active">Trang chủ</a>
+    <a href="about.html">Giới thiệu</a>
+    <a href="contact.html">Liên hệ</a>
+</nav>
 
         <div class="info">
             <p> <strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
